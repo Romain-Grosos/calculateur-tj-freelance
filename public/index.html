@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance : Calculateur de TJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Calculette de TJ</h1>
+
+        <label for="baseRate">Taux de base :</label>
+        <input type="range" id="baseRate" min="400" max="1000" step="10" value="700">
+        <span id="baseRateValue">700€</span>
+    
+        <h2>Paramètres d'ajustage</h2>
+
+        <section id="notConfigured">
+            <h3>Temps de travail</h3>
+                <div class="input-group">
+                    <label for="partTime">Temps partiel:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="partTime" name="partTime" value="100" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fullTime">Temps plein:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fullTime" name="fullTime" value="0" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+            <h3>Télétravail</h3>
+                <div class="input-group">
+                    <label for="fullPresentiel">Full présentiel:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fullPresentiel" name="fullPresentiel" value="400" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="oneDayRemote">1 jour remote:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="oneDayRemote" name="oneDayRemote" value="100" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="twoDayRemote">2 jours remote:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="twoDayRemote" name="twoDayRemote" value="15" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fiftyRemote">50% remote:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fiftyRemote" name="fiftyRemote" value="0" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="threeDayRemote">3 jours remote:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="threeDayRemote" name="threeDayRemote" value="-15" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fourDayRemote">4 jours remote:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fourDayRemote" name="fourDayRemote" value="-30" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fullRemote">Full remote:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fullRemote" name="fullRemote" value="-50" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+            <h3>Délais de paiement des factures</h3>
+                <div class="input-group">
+                    <label for="sixtyDays">60j date de facture:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="sixtyDays" name="sixtyDays" value="150" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fortyFiveDays">45j date de facture:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fortyFiveDays" name="fortyFiveDays" value="75" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="thirtyFiveDays">30j date de facture:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="thirtyFiveDays" name="thirtyFiveDays" value="0" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fifteenFiveDays">15j et moins:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="fifteenFiveDays" name="fifteenFiveDays" value="-50" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+            <h3>Contexte technique</h3>
+                <div class="input-group">
+                    <label for="lowTechnical">Niveau technique peu valorisant:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="lowTechnical" name="lowTechnical" value="50" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="usualTechnical">Niveau technique habituel:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="usualTechnical" name="usualTechnical" value="0" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="highTechnical">Niveau technique valorisant:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="highTechnical" name="highTechnical" value="-30" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+            <h3>Contexte entreprise</h3>
+                <div class="input-group">
+                    <label for="unwantedContext">Contexte non souhaité:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="unwantedContext" name="unwantedContext" value="50" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="knownContext">Contexte connu:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="knownContext" name="knownContext" value="0" step="5">
+                        <span class="currency-suffix">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="interestingContext">Contexte connu:</label>
+                    <div class="number-input-container">
+                        <input type="number" id="interestingContext" name="interestingContext" value="-30" step="5">   
+                        <span class="currency-suffix">€</span>
+                    </div> 
+                </div>
+            <button id="saveConfigBtn">Sauvegarder la configuration</button>
+        </section>
+        <section id="configured" class="hidden">
+            <label for="timeWorkSlider">Temps de travail :</label>
+            <input type="range" id="timeWorkSlider" min="0" max="1" step="1" value="1">
+            <div id="timeWorkDisplay">Temps plein</div>
+
+            <label for="remoteWorkSlider">Télétravail :</label>
+            <input type="range" id="remoteWorkSlider" min="0" max="6" step="1" value="3">
+            <div id="remoteWorkDisplay">50% remote</div>
+            
+            <label for="paymentDelaySlider">Délais de paiement des factures :</label>
+            <input type="range" id="paymentDelaySlider" min="0" max="3" step="1" value="2">
+            <div id="paymentDelayDisplay">30j date de facture</div>
+        
+            <label for="technicalContextSlider">Contexte technique :</label>
+            <input type="range" id="technicalContextSlider" min="0" max="2" step="1" value="1">
+            <div id="technicalContextDisplay">Niveau technique habituel</div>
+        
+            <label for="companyContextSlider">Contexte entreprise :</label>
+            <input type="range" id="companyContextSlider" min="0" max="2" step="1" value="1">
+            <div id="companyContextDisplay">Contexte connu</div>
+        
+            <h2>TJ final : <span id="finalTJ">700€</span></h2>
+
+            <button id="saveSliderPositionBtn">Sauvegarder la configuration</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

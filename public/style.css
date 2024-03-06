@@ -1,0 +1,185 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Lato', Arial, sans-serif; /* Vous pouvez choisir une autre police si vous le souhaitez */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #E9F2FF; /* Remplacez par la couleur que vous choisissez */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px; /* Vous pouvez ajuster cette valeur selon vos préférences */
+}
+
+h2 {
+    margin:2em 0 1em 0;
+}
+
+.input-group {
+    display: block;
+    margin:0;
+}
+
+.number-input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.currency-suffix {
+    position: absolute;
+    top: 54%;
+    right: 1.8em;
+    transform: translateY(-50%);
+    color:grey;
+    pointer-events: none;
+}
+
+
+.input-group > * {
+    margin:0;
+}
+
+.input-group label {
+    display: inline-block;
+    min-width:40%;
+    text-align:left;
+    font-weight: 500;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 5px; /* Augmentation de l'épaisseur du slider */
+    background: #B0C4DE; /* Couleur de fond du slider */
+    outline: none;
+    transition: opacity 0.2s;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    background: #B0C4DE; /* Couleur du curseur */
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background 0.3s;
+    border:5px solid #ccc;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #B0C4DE; /* Couleur du curseur */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    border:1px solid #ccc;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: 700; /* Gras pour les intitulés */
+}
+
+div {
+    font-weight: 300; /* Léger pour les valeurs */
+    margin: 0 0 35px 0; /* Augmentation de la marge pour plus d'espacement */
+}
+
+
+.slider-positive {
+    background: #FFD1D1; /* Rouge pastel */
+}
+
+.slider-neutral {
+    background: #B0C4DE; /* Couleur par défaut */
+}
+
+.slider-negative {
+    background: #D1FFD1; /* Vert pastel */
+}
+
+.slider-positive::-webkit-slider-runnable-track {
+    background: #FFD1D1; /* Rouge pastel pour Webkit (Chrome, Safari) */
+}
+
+.slider-positive::-moz-range-track {
+    background: #FFD1D1; /* Rouge pastel pour Firefox */
+}
+
+.slider-neutral::-webkit-slider-runnable-track {
+    background: #B0C4DE; /* Couleur par défaut pour Webkit */
+}
+
+.slider-neutral::-moz-range-track {
+    background: #B0C4DE; /* Couleur par défaut pour Firefox */
+}
+
+.slider-negative::-webkit-slider-runnable-track {
+    background: #D1FFD1; /* Vert pastel pour Webkit */
+}
+
+.slider-negative::-moz-range-track {
+    background: #D1FFD1; /* Vert pastel pour Firefox */
+}
+
+/* Couleur du thumb en fonction de la couleur du slider */
+.slider-positive::-webkit-slider-thumb {
+    background: #FFD1D1 !important; /* Rouge pastel pour Webkit */
+    border: 1px solid #FFD1D1; /* Ajout d'une bordure de la même couleur pour renforcer la visibilité */
+}
+
+.slider-positive::-moz-range-thumb {
+    background: #FFD1D1 !important; /* Rouge pastel pour Firefox */
+    border: 1px solid #FFD1D1;
+}
+
+.slider-neutral::-webkit-slider-thumb {
+    background: #B0C4DE !important; /* Couleur par défaut pour Webkit */
+    border: 1px solid #B0C4DE;
+}
+
+.slider-neutral::-moz-range-thumb {
+    background: #B0C4DE !important; /* Couleur par défaut pour Firefox */
+    border: 1px solid #B0C4DE;
+}
+
+.slider-negative::-webkit-slider-thumb {
+    background: #D1FFD1 !important; /* Vert pastel pour Webkit */
+    border: 1px solid #D1FFD1;
+}
+
+.slider-negative::-moz-range-thumb {
+    background: #D1FFD1 !important; /* Vert pastel pour Firefox */
+    border: 1px solid #D1FFD1;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none !important;
+}
